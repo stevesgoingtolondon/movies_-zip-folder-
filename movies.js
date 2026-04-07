@@ -13,8 +13,7 @@ class Movies {
   updateRating(rating) {
     this.rating = rating;
   }
-
-  // Method to display the movie's information
+ // Method to display the movie's information
   displayInfo() {
   }
 }
