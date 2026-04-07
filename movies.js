@@ -12,7 +12,7 @@ class Movies {
 
 
   // Method to update the rating of the movie
-  updateRating(newRating) {
+  updateRating(rating) {
     this.rating = rating ;
   }
   
@@ -21,7 +21,9 @@ movie.displayInfo();
 
 
 // Test your implementation
-const movie = new Movies("The- Matrix", ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"], "A computer hacker learns about the true nature of his reality and his role in the war against its controllers.", 8.7);
+const movie = new Movies("The Matrix", 
+  ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"], 
+  "A computer hacker learns about the true nature of his reality and his role in the war against its controllers.", 8.7);
 
 // Display the initial information of the movie
 movie.displayInfo();
