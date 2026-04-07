@@ -1,3 +1,5 @@
+document.getElementById("movie-info")
+
 // Define the Movie class
 class Movies {
   constructor(title, cast, description, rating) {
@@ -5,25 +7,22 @@ class Movies {
     this.cast = cast;
     this.description = description;
     this.rating = rating;
-}
-}
-
-  // title, cast, description, rating
-
+  }
 
   // Method to update the rating of the movie
   updateRating(rating) {
-    this.rating = rating ;
+    this.rating = rating;
   }
-  
-  // Method to display the movie's information
-movie.displayInfo();
 
+  // Method to display the movie's information
+  displayInfo() {
+  }
+}
 
 // Test your implementation
 const movie = new Movies("The Matrix", 
   ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"], 
-  "A computer hacker learns about the true nature of his reality and his role in the war against its controllers.", 8.7);
+  "Neo believes that Morpheus, an elusive figure considered to be the most dangerous man alive, can answer his question -- What is the Matrix?", 8.7);
 
 // Display the initial information of the movie
 movie.displayInfo();
