@@ -1,4 +1,4 @@
-const movieInfo = document.getElementById("movie-info")
+const movieInfo = document.getElementById("movie-info");
 
 // Define the Movie class
 class Movies {
@@ -15,7 +15,10 @@ class Movies {
   }
  // Method to display the movie's information
   displayInfo() {
-
+    movieInfo.innerHTML += "<p>" + this.title + "</p>"
+    movieInfo.innerHTML += "<p>" + this.cast + "</p>"
+    movieInfo.innerHTML += "<p>" + this.description + "</p>"
+    movieInfo.innerHTML += "<p>" + this.rating + "</p>"
   }
 }
 
